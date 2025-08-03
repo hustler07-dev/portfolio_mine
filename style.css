@@ -181,19 +181,14 @@
   gap: 20px;
   flex-wrap: wrap;
 }
-
 .edu-card {
   background: rgba(255, 255, 255, 0.777);
   padding: 20px 25px;
   border-radius: 12px;
-  /* Enhanced layered shadow effect */
-  box-shadow: 
-    0 2px 4px rgba(0, 0, 0, 0.05),
-    0 4px 12px rgba(0, 0, 0, 0.08),
-    0 8px 24px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   max-width: 300px;
   flex: 1;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 /* Hover effect for enhanced interactivity */
@@ -300,25 +295,15 @@
   flex-wrap: wrap;
   gap: 25px;
 }
+
 .cert-card {
+  position: relative; /* 🔧 Required for ::before to align properly */
   background: rgba(255, 255, 255, 0.777);
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   max-width: 320px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  
-  /* Glossy base effect */
-  background: linear-gradient(
-    135deg, 
-    rgba(255, 255, 255, 0.9) 0%,
-    rgba(255, 255, 255, 0.777) 50%,
-    rgba(255, 255, 255, 0.6) 100%
-  );
-  
-  /* Inner highlight for glass effect */
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+  overflow: hidden; /* Optional: prevents shine from leaking outside */
 }
 
 .cert-card::before {
@@ -338,19 +323,21 @@
   );
   transition: left 0.6s ease;
   z-index: 1;
+  pointer-events: none;
 }
 
 .cert-card:hover {
   transform: scale(1.03);
-  box-shadow: 
-    0 8px 25px rgba(0,0,0,0.12),
-    0 4px 12px rgba(0,0,0,0.08),
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.12),
+    0 4px 12px rgba(0, 0, 0, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .cert-card:hover::before {
   left: 100%;
 }
+
 .cert-card img {
   width: 100%;
   border-top-left-radius: 12px;
