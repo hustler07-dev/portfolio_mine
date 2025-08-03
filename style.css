@@ -5,7 +5,7 @@
   background: black;
   color: white;
   min-height: 100vh;
-  font-family: 'Arial Black', sans-serif;
+  font-family: "Arial Black", sans-serif;
 }
 
 .hero-content {
@@ -92,79 +92,84 @@
 }
 .skills-text {
   flex: 1;
-  max-width: 1000px; margin: auto; text-align: center;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
 }
 .skills-text p {
   font-size: 1rem;
   line-height: 1.6;
 }
 
-.skills-section {  
+.skills-section {
   padding: 60px 20px;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url('https://i.pinimg.com/736x/e7/20/67/e72067b9badf86fa8b74a692d1fe113d.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://i.pinimg.com/736x/e7/20/67/e72067b9badf86fa8b74a692d1fe113d.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
- 
-.skills-text { 
-    max-width: 1000px; 
-    margin: auto; 
-    text-align: center; }
 
-.skills-text h2 { 
-    font-size: 2em; 
-    color: #FFEE32;
-    margin-bottom: 30px;}
-
-.skills-group { 
-    margin-bottom: 40px; 
+.skills-text {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
 }
 
-.skills-group h3 { 
-    font-size: 1.625em; 
-    color: #00B4D8; 
-    margin-bottom: 15px; }
+.skills-text h2 {
+  font-size: 2em;
+  color: #ffee32;
+  margin-bottom: 30px;
+}
 
-.skills-logos { 
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 25px; 
-    margin-bottom: 10px; }
+.skills-group {
+  margin-bottom: 40px;
+}
 
-.skills-logos img { 
-    width: 60px; 
-    height: 75px; 
-    object-fit: contain; 
-    transition: transform 0.35s; }
+.skills-group h3 {
+  font-size: 1.625em;
+  color: #00b4d8;
+  margin-bottom: 15px;
+}
 
-.skills-logos img:hover { 
-    transform: scale(1.5); }
+.skills-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 10px;
+}
 
-.custom-icon { 
-    display: inline-block; 
-    background: #e2e8f0; 
-    color: #333; padding: 8px 12px; 
-    border-radius: 6px; 
-    font-weight: bold; font-size: 0.9rem; }
+.skills-logos img {
+  width: 60px;
+  height: 75px;
+  object-fit: contain;
+  transition: transform 0.35s;
+}
 
-.skill-block p { 
-    font-size: 1.05em; 
-    color: #555; }
+.skills-logos img:hover {
+  transform: scale(1.5);
+}
 
+.custom-icon {
+  display: inline-block;
+  background: #e2e8f0;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.skill-block p {
+  font-size: 1.05em;
+  color: #555;
+}
 
 .education-section {
   padding: 60px 20px;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url('https://www.right-to-education.org/sites/right-to-education.org/files/rm373batch13-081_0.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.right-to-education.org/sites/right-to-education.org/files/rm373batch13-081_0.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -173,7 +178,7 @@
 .education-section h2 {
   font-size: 2.2rem;
   margin-bottom: 40px;
-  color: #FFEE32;
+  color: #ffee32;
 }
 .edu-cards {
   display: flex;
@@ -185,19 +190,13 @@
   background: rgba(255, 255, 255, 0.777);
   padding: 20px 25px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   max-width: 300px;
   flex: 1;
   transition: transform 0.3s ease;
 }
-
-/* Hover effect for enhanced interactivity */
 .edu-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 
-    0 4px 8px rgba(0, 0, 0, 0.08),
-    0 8px 20px rgba(0, 0, 0, 0.12),
-    0 16px 32px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
 }
 .edu-card h3 {
   font-size: 1.2rem;
@@ -212,11 +211,8 @@
 
 .projects-section {
   padding: 60px 20px;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url('https://media.istockphoto.com/id/861911620/photo/project-manager-updating-gantt-chart-planning-on-a-virtual-screen.jpg?s=612x612&w=0&k=20&c=-EnwdfNAMCfIj5_AgIbD1onENa2yaRBgrWAH9t_ea8M=');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://media.istockphoto.com/id/861911620/photo/project-manager-updating-gantt-chart-planning-on-a-virtual-screen.jpg?s=612x612&w=0&k=20&c=-EnwdfNAMCfIj5_AgIbD1onENa2yaRBgrWAH9t_ea8M=");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -225,7 +221,7 @@
 .projects-section h2 {
   font-size: 2.2rem;
   margin-bottom: 40px;
-  color: #FFEE32;
+  color: #ffee32;
 }
 .project-cards {
   display: flex;
@@ -236,7 +232,7 @@
 .project-card {
   background: rgba(255, 255, 255, 0.777);
   border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
   max-width: 330px;
   overflow: hidden;
   transition: transform 0.3s;
@@ -271,40 +267,34 @@
 .project-btn:hover {
   background-color: #1a3691;
 }
- 
+
 .certifications-section {
   padding: 60px 20px;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url('https://static.vecteezy.com/system/resources/previews/045/979/314/non_2x/black-and-gold-abstract-curve-background-modern-wallpaper-suitable-for-certificate-design-cards-templates-banners-web-pages-and-others-vector.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://static.vecteezy.com/system/resources/previews/045/979/314/non_2x/black-and-gold-abstract-curve-background-modern-wallpaper-suitable-for-certificate-design-cards-templates-banners-web-pages-and-others-vector.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
 }
-
 .certifications-section h2 {
   font-size: 2.2rem;
   margin-bottom: 40px;
-  color: #FFEE32;
+  color: #ffee32;
 }
-
+.cert-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
 .cert-card {
-  background: linear-gradient(
-    135deg, 
-    rgba(255, 255, 255, 0.9) 0%,
-    rgba(255, 255, 255, 0.777) 50%,
-    rgba(255, 255, 255, 0.6) 100%
-  );
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  max-width: 320px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
-  z-index: 0;
+  background: rgba(255, 255, 255, 0.777);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  max-width: 320px;
+  transition: transform 0.3s ease;
   overflow: hidden;
   cursor: pointer;
 }
@@ -331,9 +321,9 @@
 
 .cert-card:hover {
   transform: scale(1.03);
-  box-shadow: 
-    0 8px 25px rgba(0,0,0,0.12),
-    0 4px 12px rgba(0,0,0,0.08),
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.12),
+    0 4px 12px rgba(0, 0, 0, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
@@ -341,45 +331,27 @@
   left: 100%;
 }
 
-/* Optional: continuous shine */
-.cert-card.continuous-shine::before {
-  animation: shine 2.5s infinite;
-}
-
-@keyframes shine {
-  0% { left: -100%; }
-  50% { left: 100%; }
-  100% { left: 100%; }
-}
-
 .cert-card img {
-  position: relative;
   width: 100%;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
-
 .cert-card h3 {
   font-size: 1.1rem;
   margin: 15px 10px 5px;
   color: #222;
 }
-
 .cert-card p {
   font-size: 0.9rem;
   color: #555;
   margin-bottom: 15px;
 }
 
-
 .contact-section {
   padding: 60px 20px;
   padding: 60px 20px;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url('https://img.freepik.com/premium-photo/graphic-two-hands-shaking-with-cityscape-background_737376-1064.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://img.freepik.com/premium-photo/graphic-two-hands-shaking-with-cityscape-background_737376-1064.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -389,7 +361,7 @@
 .contact-section h2 {
   font-size: 2.2rem;
   margin-bottom: 20px;
-  color: #FFEE32;
+  color: #ffee32;
 }
 .contact-section p {
   font-size: 1.5rem;
@@ -409,7 +381,7 @@
   padding: 20px;
   border-radius: 12px;
   width: 150px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   text-align: center;
 }
@@ -425,8 +397,3 @@
   display: block;
   font-weight: 500;
 }
-
-
-
-
-
