@@ -117,7 +117,7 @@
 }
 
 .skills-text h2 {
-  font-size: 2em;
+  font-size: 2.25em;
   color: #ffee32;
   margin-bottom: 30px;
 }
@@ -176,7 +176,7 @@
   text-align: center;
 }
 .education-section h2 {
-  font-size: 2.2rem;
+  font-size: 2.25rem;
   margin-bottom: 40px;
   color: #ffee32;
 }
@@ -219,7 +219,7 @@
   text-align: center;
 }
 .projects-section h2 {
-  font-size: 2.2rem;
+  font-size: 2.25rem;
   margin-bottom: 40px;
   color: #ffee32;
 }
@@ -278,7 +278,7 @@
   text-align: center;
 }
 .certifications-section h2 {
-  font-size: 2.2rem;
+  font-size: 2.25rem;
   margin-bottom: 40px;
   color: #ffee32;
 }
@@ -300,7 +300,7 @@
 }
 
 .cert-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -321,9 +321,7 @@
 
 .cert-card:hover {
   transform: scale(1.03);
-  box-shadow:
-    0 8px 25px rgba(0, 0, 0, 0.12),
-    0 4px 12px rgba(0, 0, 0, 0.08),
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
@@ -347,8 +345,182 @@
   margin-bottom: 15px;
 }
 
-.contact-section {
+/* Achievements Section */
+.achievements-section {
   padding: 60px 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://img.freepik.com/premium-vector/black-luxury-abstract-background-design_222085-1090.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle animated background shapes */
+.achievements-section::before,
+.achievements-section::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(25, 118, 210, 0.08);
+  z-index: 0;
+  animation: float 10s infinite ease-in-out;
+}
+.achievements-section::before {
+  top: -100px;
+  left: -100px;
+}
+.achievements-section::after {
+  bottom: -120px;
+  right: -120px;
+  animation-delay: 5s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-30px) scale(1.05);
+  }
+}
+
+.achievements-section h2 {
+  font-size: 2.25rem;
+  margin-bottom: 50px;
+  color: #ffee32;
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 1px;
+}
+
+.section-subtitle {
+  font-size: 1.375rem;
+  color: #4e9fe5;
+  max-width: 700px;
+  margin: -30px auto 50px; /* slightly overlaps upward for tight spacing */
+  line-height: 1.6;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  opacity: 0.9;
+}
+
+/* Achievement Grid */
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Achievement Card */
+.achievement-card {
+  background: white;
+  border-radius: 20px;
+  padding: 35px 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gradient border hover effect */
+.achievement-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(135deg, #1976d2, #42a5f5, #90caf9);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.achievement-card:hover::before {
+  opacity: 1;
+}
+
+.achievement-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Achievement Image */
+.achievement-card img {
+  width: 100%;
+  max-width: 175px;
+  height: auto;
+  max-height: 125px;
+  object-fit: contain;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+.achievement-card:hover img {
+  transform: scale(1.175);
+}
+
+/* Title + Text */
+.achievement-card h3 {
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+.achievement-card p {
+  color: #0f0f0f;
+  font-size: 1.125rem;
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+/* Company Tag */
+.company-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  color: #073f78;
+  padding: 7px 15px;
+  border-radius: 25px;
+  font-size: 1.25 rem;
+  font-weight: 777;
+  margin-top: 15px;
+  transition: all 0.4s ease;
+}
+.company-tag:hover {
+  background: linear-gradient(135deg, #bbdefb, #90caf9);
+  color: #0d47a1;
+  box-shadow: 0 3px 8px rgba(25, 118, 210, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .achievements-section {
+    padding: 50px 15px;
+  }
+  .achievements-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  .achievement-card {
+    padding: 25px 20px;
+  }
+}
+
+.contact-section {
   padding: 60px 20px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://img.freepik.com/premium-photo/graphic-two-hands-shaking-with-cityscape-background_737376-1064.jpg");
@@ -359,7 +531,7 @@
   text-align: center;
 }
 .contact-section h2 {
-  font-size: 2.2rem;
+  font-size: 2.25rem;
   margin-bottom: 20px;
   color: #ffee32;
 }
