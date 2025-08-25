@@ -462,9 +462,9 @@
 /* Achievement Image */
 .achievement-card img {
   width: 100%;
-  max-width: 175px;
+  max-width: 475px;
   height: auto;
-  max-height: 125px;
+  max-height: 425px;
   object-fit: contain;
   margin-bottom: 25px;
   border-radius: 10px;
@@ -497,7 +497,8 @@
   border-radius: 25px;
   font-size: 1.25 rem;
   font-weight: 777;
-  margin-top: 15px;
+  margin-top: 12px;
+  margin-bottom: 20px;
   transition: all 0.4s ease;
 }
 .company-tag:hover {
@@ -569,3 +570,4 @@
   display: block;
   font-weight: 500;
 }
+
